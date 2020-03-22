@@ -37,14 +37,14 @@ while True:
 
     new_el = 0          #елемент нової матриці
     bufmatr = []        #буферна матриця
-    endmatr = []        #кінечна матриц
+    endmatr = []        #кінечна матриця
     for z in range(0, row1matr):  #проходим циклом по ряду першої матриці
         for j in range(0, col2matr):  #проходим циклом по стовпчику другої
             for i in range(0, col1matr):
                 new_el = new_el + matr1[z][i] * matr2[i][j]  #новий елемент ма триці
-            bufmatr.append(new_el)  #добавляєм новйй елемент в буферну матрицю
+            bufmatr.append(new_el)  #добавляєм новий елемент в буферну матрицю
             new_el = 0  #обнуляем новий елемент для подальшого пошуку інших
-        endmatr.append(bufmatr)  #добавляєм елементы з буферної матриці в кінечну
+        endmatr.append(bufmatr)  #добавляєм елементи з буферної матриці в кінечну
         bufmatr = []  #обнулення буфера
     print(endmatr)
     question = input("Хочете продовжити?Так-1,ні-інше")
